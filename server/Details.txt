@@ -1,0 +1,3 @@
+1. The information about different movies in stored in tne MongoDB Cloud site (https://cloud.mongodb.com/v2/65255cb8cc05f81d29c87263#/metrics/replicaSet/65255d431bbf4b13a5ea07a6/explorer/test/movies/find). Here, it initially makes 'test' database and makes 'movies' table inside it.
+2. We always have to POST request data using TMDB API (https://www.themoviedb.org/talk/652592edcedac4013fab030c) to the port 3010 or site where we are listening from i.e. (http://localhost:3010/addMovie). In short, we are sending POST request to this port server 3010 using POSTMAN, to addMovie into the MongoDB cloud database. For ex - The Godfather.
+3. 

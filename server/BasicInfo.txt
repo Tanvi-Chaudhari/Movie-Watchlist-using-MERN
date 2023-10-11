@@ -1,0 +1,8 @@
+Build a Watchlist Using the MERN Stack | React, TMDB API, Express, MongoDB Tutorial (2023)
+Link : https://www.youtube.com/watch?v=oSVEpH2KX5I
+
+tmdb API : https://developer.themoviedb.org/reference/intro/getting-started
+MongoDB Testing site : https://cloud.mongodb.com/v2#/org/65255338763be01ca7fe04a0/projects
+IMDB site : https://www.imdb.com/title/tt0068646/?ref_=chttp_t_2
+
+

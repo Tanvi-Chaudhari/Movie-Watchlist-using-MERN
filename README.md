@@ -20,13 +20,15 @@ The .env file contains sensitive configuration information and API keys required
 - **CONNECTION_STRING (MongoDB Atlas):**
   - [MongoDB Atlas](https://account.mongodb.com/account/login?n=%2Fv2%2F65255cb8cc05f81d29c87263%23%2Fmetrics%2FreplicaSet%2F65255d431bbf4b13a5ea07a6%2Fexplorer%2Ftest) where movie information is stored.
   - Example: `mongodb+srv://<username>:<password>@cluster0.mongodb.net/test?retryWrites=true&w=majority`
-    ![Screenshot (708)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/3d308aa7-cb9c-47d9-a8bd-82e1d26d5e2c)
+  ![Screenshot (708)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/0b1de514-ce07-4c72-93a2-61fe7fd09523)
+
 
 
 - **TOKEN (The Movie Database):**
   - An API key for authenticating requests to [The Movie Database](https://www.themoviedb.org/) (TMDB) API.
   - Example: `API_KEY_FROM_TMDB`
-    ![Screenshot (714)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/c49f8eb3-c52e-47ef-854d-5ff2052dcf0a)
+    ![Screenshot (714)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/6a18d64c-1b5d-4e93-9cbb-1a00d5b9db6f)
+
 
 ## index.js File
 
@@ -38,9 +40,8 @@ The `index.js` file is the main entry point for the backend, responsible for def
 - **API Endpoint: `/addMovie`**
   - This endpoint handles POST requests for adding a movie to the watchlist.
   - It fetches movie information from TMDB using the IMDB ID (e.g., [tt0133093](https://www.imdb.com/title/tt0133093/?ref_=chttp_t_16).
-    ![Screenshot (704)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/ddd072ae-546b-48ba-a8dc-1582e77857ae)
+    ![Screenshot (712)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/4bf26d5b-e730-4810-b9b4-0f0cd4a0ecde)
 
- 
 
 - **Processing the Movie Information:**
   - The endpoint processes the request body to extract the IMDB ID, platform, and watch date.
@@ -67,7 +68,8 @@ The `MovieModel.js` file defines the Mongoose schema for the movie watchlist.
 1. **Sending a POST Request to Add a Movie:**
    - Using a tool like POSTMAN, send a POST request to `http://localhost:3010/addMovie`.
    - The request body should include the IMDB ID, platform, and watch date.
-   ![Screenshot (706)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/585242ec-3e0e-4ae9-8edf-cad1bd4450ac)
+   ![Screenshot (709)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/6e71e3cd-9ca7-4654-b248-4f9a420df277)
+
 
 2. **Accessing the MongoDB Cloud Database:**
    - Movie information is stored in a MongoDB Cloud database under the 'test' database and 'movies' collection. As you can see in the above image of MongoDB Cloud website.
@@ -149,7 +151,9 @@ npm start
 Open your browser and go to http://localhost:3000 to access the application.
 
 Here, how it looks like:
-![Screenshot (713)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/3160fe53-e692-4929-9b1f-b04b01647b8e)
+![Screenshot (711)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/3e5a1725-af2b-4538-b3dd-3e93e478a390)
+![Screenshot (713)](https://github.com/Tanvi-Chaudhari/Movie-Watchlist-using-MERN/assets/75910333/b744bdc1-2731-4bdf-8a57-b2cf15ef6273)
+
 
 
 ## References
